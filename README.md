@@ -1,7 +1,7 @@
 ## expression-compile
 Compiles arbitrary expressions into pseudo-machine code, which can be executed.
 
-#Install
+# Install
 Install this file in (python path)/Python/Lib/site-packages
 To use in your program, type
 '''
@@ -9,12 +9,12 @@ To use in your program, type
 '''
 in the header
 
-#Usage
+# Usage
 'ExpressionCompiler("some-expression")' Creates a new ExpressionCompiler object, complete with instructions.
 'ExpressionCompiler.execute(vals)' Execute "machine code" with given variable values, and return output.
 'ExpressionCompiler.printinstructions' Prints instructions, in case you're curious.
 
-#Example
+# Example
 Code:
 '''
 expressionString = "(x * x) + (y * y) + (5 * (z + 10))"
