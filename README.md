@@ -12,12 +12,16 @@ in the header
 # Usage
 `ExpressionCompiler("some-expression")` 
 Creates a new ExpressionCompiler object, complete with instructions.
+
 `ExpressionCompiler.execute(vals)` 
 Execute "machine code" with given variable values, and return output.
+
 `ExpressionCompiler.printinstructions()` 
 Prints instructions, in case you're curious.
+
 `ExpressionCompiler.vars`
 Returns all variable names in expression.
+
 `ExpressionCompiler.cons`
 Returns all constants in expression
 
