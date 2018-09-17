@@ -1,5 +1,5 @@
 ## expression-compile
-Compiles arbitrary expressions into pseudo-machine code, which can be executed. Currently only supports basic arithmetic operations.
+Compiles arbitrary expressions into pseudo-machine code, which can be executed. Currently only supports basic arithmetic operations as well as user-defined functions.
 
 # Install
 Install this file in (python path)/Python/Lib/site-packages
