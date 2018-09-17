@@ -14,7 +14,7 @@ in the header
 Creates a new ExpressionCompiler object, complete with instructions.
 `ExpressionCompiler.execute(vals)` 
 Execute "machine code" with given variable values, and return output.
-`ExpressionCompiler.printinstructions` 
+`ExpressionCompiler.printinstructions()` 
 Prints instructions, in case you're curious.
 
 # Example
@@ -43,6 +43,32 @@ MUL R1 R2 R1
 ADD R0 R1 R0
 169            //result
 ```
+
+# Future updates
+Planned Expansions:
+- More space for variables (currently only 32, and all must be lowercase alphabetical)
+- More space for constants (currently only 64)
+- Add support for functions
+- Add support for comparative operators
+- Add support for logical operators
+- Add support for conditional statements
+What this will hopefully look like:
+```
+expressionString =
+"
+foo = bar * y;
+if (foo > 10) {
+  baz = sin(bar);
+} else {
+  baz = sin(foo);
+}
+return baz;
+"
+print(expressionString.exec(0, 5, 3, 0))
+>>> -0.958924274661385
+```
+
+
 
 
 
