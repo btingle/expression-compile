@@ -70,6 +70,9 @@ print(expression.exec(0, 5, 3, 0))
 >>> -0.958924274661385
 ```
 
+# Notes
+If you somehow come across this project, I am fairly new to programming and would appreciate any advice or constructive criticism. I have little in-depth formal knowledge of how assembly language or machine instructions work, so I'm sure this could use some brushing up. Thanks!
+
 
 
 
