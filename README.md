@@ -65,7 +65,8 @@ if (foo > 10) {
 }
 return baz;
 "
-print(expressionString.exec(0, 5, 3, 0))
+expression = ExpressionCompiler(expressionString)
+print(expression.exec(0, 5, 3, 0))
 >>> -0.958924274661385
 ```
 
