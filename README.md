@@ -38,7 +38,7 @@ Deletes function with specified name from list
 # Example
 Code:
 ```
-expressionString = "(sin(x) * x) + (y * y) + (5 * (z + 10))"
+expressionString = "(sin(theta) * theta) + (y * y) + (5 * (z + 10))"
 expression = ExpressionCompiler(expressionString)
 result = expression.execute(1, 2, 3)
 expression.printinstructions()
@@ -65,7 +65,7 @@ ADD R0 R1 R0
 
 # Future updates
 Planned Expansions:
-- More space for variables (currently only 32, and all must be lowercase alphabetical)
+- More space for variables
 - More space for constants (currently only 64)
 - ~~Add support for functions~~ Done! Only space for 8 functions unfortunately. Fairly hacky implementation.
 - Add support for comparative operators
