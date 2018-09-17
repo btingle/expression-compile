@@ -27,7 +27,9 @@ Returns all constants in expression
 
 `ExpressionCompiler.addfunc(callback, name)`
 Registers a new function in ExpressionCompiler class, that can be used by any ExpressionCompiler object.
+
 This can be used to register other expressions as functions by `.addfunc(expression.execute, name)`
+
 Default functions are sin, cos, and sqrt. These can be removed.
 
 `ExpressionCompiler.delfunc(name)`
