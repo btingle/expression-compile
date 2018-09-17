@@ -5,7 +5,7 @@ Compiles arbitrary expressions into pseudo-machine code, which can be executed. 
 Install this file in (python path)/Python/Lib/site-packages
 To use in your program, type
 ```
-  from expression-compile import ExpressionCompiler
+  from expression_compile import ExpressionCompiler
 ```
 in the header
 
