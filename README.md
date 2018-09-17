@@ -25,6 +25,14 @@ Returns all variable names in expression.
 `ExpressionCompiler.cons`
 Returns all constants in expression
 
+`ExpressionCompiler.addfunc(callback, name)`
+Registers a new function in ExpressionCompiler class, that can be used by any ExpressionCompiler object.
+This can be used to register other expressions as functions by `.addfunc(expression.execute, name)`
+Default functions are sin, cos, and sqrt. These can be removed.
+
+`ExpressionCompiler.delfunc(name)`
+Deletes function with specified name from list
+
 # Example
 Code:
 ```
@@ -56,7 +64,7 @@ ADD R0 R1 R0
 Planned Expansions:
 - More space for variables (currently only 32, and all must be lowercase alphabetical)
 - More space for constants (currently only 64)
-- Add support for functions
+- ~~Add support for functions~~ Done! Only space for 8 functions unfortunately.
 - Add support for comparative operators
 - Add support for logical operators
 - Add support for conditional statements
