@@ -38,15 +38,16 @@ Deletes function with specified name from list
 # Example
 Code:
 ```
-expressionString = "(x * x) + (y * y) + (5 * (z + 10))"
+expressionString = "(sin(x) * x) + (y * y) + (5 * (z + 10))"
 expression = ExpressionCompiler(expressionString)
-result = expression.execute(5, 7, 9)
+result = expression.execute(1, 2, 3)
 expression.printinstructions()
 print(result)
 ```
 Output:
 ```
 STO V0 R0
+FUN R0 R0
 STO V0 R1
 MUL R0 R1 R0
 STO V1 R1
@@ -59,7 +60,7 @@ STO C1 R3
 ADD R2 R3 R2
 MUL R1 R2 R1
 ADD R0 R1 R0
-169            //result
+69.8414709848079            //result
 ```
 
 # Future updates
