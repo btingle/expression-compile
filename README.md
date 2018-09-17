@@ -67,7 +67,7 @@ ADD R0 R1 R0
 Planned Expansions:
 - More space for variables (currently only 32, and all must be lowercase alphabetical)
 - More space for constants (currently only 64)
-- ~~Add support for functions~~ Done! Only space for 8 functions unfortunately.
+- ~~Add support for functions~~ Done! Only space for 8 functions unfortunately. Fairly hacky implementation.
 - Add support for comparative operators
 - Add support for logical operators
 - Add support for conditional statements
