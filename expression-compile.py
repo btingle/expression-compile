@@ -1,8 +1,8 @@
 class ExpressionCompiler:
 
 	tokens    = [ '(' , ')', '+', '-', '*', '/' ]	# static
-	alphabet  = "abcdefghijklmnopqrstuvwxyz"		# static
-	numerical = "1234567890"						# static
+	alphabet  = "abcdefghijklmnopqrstuvwxyz"	# static
+	numerical = "1234567890"			# static
 	
 	def __init__(self, expression):
 		self.expression, self.vars, self.cons = ExpressionCompiler.initpass('('+ expression + ')')
@@ -140,7 +140,7 @@ class ExpressionCompiler:
 				raise NameError("Unexpected operator")
 				
 			elif expval is 1:
-				raise NameError("Dunno how you did that")
+				raise NameError("Functions not supported")
 				
 			elif expval is 3:
 				instructions.append( chr(0) + chr(0) + chr(ord(expstring[i])-32) + chr(2) + chr(memloc) )	# chr(0) = STO, chr(0) = VAR, chr(2) = REG
